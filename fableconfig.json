@@ -1,0 +1,9 @@
+{
+  "module": "umd",
+  "sourceMaps": true,
+  "projFile": "Script.fsx",
+  "outDir": "temp",
+  "scripts": {
+    "prebuild": "npm install"
+  }
+}
