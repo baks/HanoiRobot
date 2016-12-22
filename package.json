@@ -9,9 +9,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "fable-compiler": "0.0.10"
+    "fable-compiler": "^0.7.9",
+    "requirejs": "^2.3.2"
   },
   "dependencies": {
-    "fable-core": "^0.6.3"
+    "core-js": "^2.4.1",
+    "fable-core": "^0.7.9"
   }
 }

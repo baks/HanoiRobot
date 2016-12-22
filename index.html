@@ -3,12 +3,20 @@
 <head>
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
 	<style>
-	html, body, iframe { height: 98%; width:98% }
+	html, body, iframe { height: 75%; width:75% }
 	</style>
 </head>
 <body>
     <iframe id="cover" frameborder="0" src="http://konkurs-jubileusz.programistamag.pl"></iframe>
-    <script src="node_modules/fable-core/fable-core.min.js"></script>
-    <script src="temp/Script.js"></script>
+    <script src="node_modules/requirejs/require.js"></script>
+    <script>
+		// Paths in Require.js must always omit the .js extension
+		requirejs.config({
+			paths: {
+                'fable-core/umd': 'node_modules/fable-core/umd',
+			}
+		});
+		requirejs(["temp/Script"]);
+        </script>
 </body>
 </html>
